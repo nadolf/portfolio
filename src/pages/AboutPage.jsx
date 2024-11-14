@@ -1,9 +1,64 @@
-import '../styles/aboutPage.css';
+import "../styles/aboutPage.css";
+import NavigationBar from "../components/NavBar";
+
+const skills = [
+  "Python",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "React.Js",
+  "React Native",
+  "Swift",
+  "SwiftUI",
+  "SQL",
+  "RESTful API",
+  "Git",
+];
 
 export default function About() {
-    return (
-        <>
-        </>
-    )
-
+  return (
+    <>
+      <NavigationBar />
+      <div className="about-container">
+        <h2 className="about-title">About Me</h2>
+        <div className="content-container">
+          <div className="text-content">
+            <p>
+              Hi, I'm Nadolf Tagoe, a senior majoring in Computer Science with a focus in
+              Software Engineering and Computer Systems. I'm passionate about
+              Frontend and Mobile Development. During my internships at Navy
+              Federal Credit Union and Virtual, Inc., I contributed to platform
+              redesigns, fixed front-end issues, and improved accessibility. I'm
+              eager to keep learning and growing as a developer.
+            </p>
+            <div>
+              <strong>Skills:</strong>
+            </div>
+            <div className="skills-list">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  {skill}
+                </div>
+              ))}
+            </div>
+            <div className="certification-section">
+              <strong>Certifications:</strong>
+              <div className="certification-badge-container">
+                <img
+                  className="certification-badge-image"
+                  src="src/assets/AWS-Certified-Cloud-Practitioner_badge.png"
+                  alt="AWS Cloud Practitioner Certification Badge"
+                />
+              </div>
+            </div>
+          </div>
+          <img
+            className="profile-image"
+            src="src/assets/headshoot.jpg"
+            alt="headshot"
+          />
+        </div>
+      </div>
+    </>
+  );
 }
