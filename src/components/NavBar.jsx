@@ -7,8 +7,8 @@ export default function NavigationBar() {
       <div class="navbar-container">
         <h2 class="navigation-header">Nadolf</h2>
         <div class="navigation-container">
-          <a href="">Home</a>
-          <a href="">About</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
           <a href="">Projects</a>
           <a href="src/assets/Tagoe_Nadolf_Resume.pdf" target="_blank">
             Resume
