@@ -1,5 +1,4 @@
 import "../styles/aboutPage.css";
-import NavigationBar from "../components/NavBar";
 
 const skills = [
   "Python",
@@ -17,10 +16,8 @@ const skills = [
 
 export default function About() {
   return (
-    <>
-      <NavigationBar />
-      <div className="about-container">
-        <h1 className="about-title">About Me</h1>
+      <div id="about" className="about-container">
+        <h1 className="about-header">About Me</h1>
         <div className="content-container">
           <div className="text-content">
             <p>
@@ -59,6 +56,5 @@ export default function About() {
           />
         </div>
       </div>
-    </>
   );
 }

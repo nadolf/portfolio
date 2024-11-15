@@ -3,11 +3,12 @@ body {
   background-color: #f0f0f5;
 }
 
-h1 {
-  text-align: center;
-  color: #0186e5;
-  margin-top: 20px;
-  margin-bottom: 40px;
+.project-header {
+    text-align: center;
+    color: #0186e5;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 3rem;
 }
 
 .project-tiles {
@@ -74,6 +75,14 @@ h1 {
   font-size: 1em;
   margin-bottom: 15px;
   margin-top: 0px;
+}
+
+.project-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-container {

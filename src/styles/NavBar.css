@@ -1,9 +1,16 @@
+body {
+    margin: 0;
+}
 .navbar-container {
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-}
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
 
 .navigation-container {
     display: flex; 
@@ -12,6 +19,7 @@
 .navigation-container a {
     margin: 0 10px; 
     font-size: 20px;
+    color: #000;
 }
 
 .navigation-header {

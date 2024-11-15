@@ -1,13 +1,11 @@
 import "../styles/projectPage.css";
 import projects from "../../projectsData.json";
-import NavigationBar from "../components/NavBar";
 import { FiPlay, FiGithub } from "react-icons/fi";
 
 export default function Project() {
     return (
-      <>
-        <NavigationBar />
-        <h1>Projects</h1>
+      <div id="project" className="project-container">
+        <h1 className="project-header">Projects</h1>
         <div className="project-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-tile">
@@ -30,6 +28,6 @@ export default function Project() {
             </div>
           ))}
         </div>
-      </>
+      </div>
     );
 }
