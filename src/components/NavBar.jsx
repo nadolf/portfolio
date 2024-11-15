@@ -1,4 +1,4 @@
-import "../components/NavBar.css";
+import "../styles/NavBar.css";
 import { MdOutlineLightMode, MdOutlineModeNight } from "react-icons/md";
 
 export default function NavigationBar() {
@@ -9,7 +9,7 @@ export default function NavigationBar() {
         <div class="navigation-container">
           <a href="/">Home</a>
           <a href="/about">About</a>
-          <a href="">Projects</a>
+          <a href="/project">Projects</a>
           <a href="src/assets/Tagoe_Nadolf_Resume.pdf" target="_blank">
             Resume
           </a>

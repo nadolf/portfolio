@@ -20,7 +20,7 @@ export default function About() {
     <>
       <NavigationBar />
       <div className="about-container">
-        <h2 className="about-title">About Me</h2>
+        <h1 className="about-title">About Me</h1>
         <div className="content-container">
           <div className="text-content">
             <p>
@@ -46,7 +46,7 @@ export default function About() {
               <div className="certification-badge-container">
                 <img
                   className="certification-badge-image"
-                  src="src/assets/AWS-Certified-Cloud-Practitioner_badge.png"
+                  src="src/assets/aws-certified-cloud-practitioner-badge.png"
                   alt="AWS Cloud Practitioner Certification Badge"
                 />
               </div>
