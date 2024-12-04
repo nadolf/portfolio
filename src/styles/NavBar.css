@@ -1,32 +1,83 @@
 body {
     margin: 0;
 }
+
 .navbar-container {
     position: sticky;
-    top: 0; 
-    z-index: 1000; 
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} 
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-container.dark {
+    background-color: #333;
+    color: white;
+}
 
 .navigation-container {
-    display: flex; 
+    display: flex;
 }
 
 .navigation-container a {
-    margin: 0 10px; 
+    margin: 0 10px;
     font-size: 20px;
     color: #000;
+    text-decoration: none;
+}
+
+.navigation-container a:hover {
+    color: #0096FF;
 }
 
 .navigation-header {
     font-size: 38px;
 }
 
+.nav-link {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link.light {
+    color: #000;
+  }
+  
+  .nav-link.light:hover {
+    color: #0096ff;
+  }
+  
+  .nav-link.dark {
+    color: #fff;
+  }
+  
+  .nav-link.dark:hover {
+    color: #0096ff;
+  }
+
 .nav-icons {
     font-size: 25px;
     color: #0096FF;
+    cursor: pointer;
+}
+
+body.light {
+    background-color: #fff;
+    color: black;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.nav-icons:hover {
+    color: #ffb400;
 }

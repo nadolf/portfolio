@@ -1,17 +1,36 @@
 .about-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-container.light {
+  background-color: #f5f5f5;;
+  color: black;
+}
+
+.about-container.dark {
+  background-color: #121212;
+  color: white;
+}
 
 .about-header {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.about-header.light {
   color: #0096ff;
+}
+
+.about-header.dark {
+  color: #2b199d;
 }
 
 .certification-section {
@@ -31,13 +50,13 @@
   width: 80%;
   max-width: 1200px;
   margin-top: 20px;
-  gap: 20px;
 }
 
 .text-content {
   flex: 1;
   text-align: left;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 .profile-image {
@@ -77,6 +96,11 @@
   border-color: #007bff;
 }
 
+.about-container.dark .skill-item {
+  background-color: #333;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .content-container {
     flex-direction: column;
@@ -95,5 +119,5 @@
 }
 
 p {
-    word-spacing: 5px;
+  word-spacing: 3px;
 }

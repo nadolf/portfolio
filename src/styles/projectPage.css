@@ -5,10 +5,17 @@ body {
 
 .project-header {
     text-align: center;
-    color: #0186e5;
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 3rem;
+}
+
+.project-header.light {
+  color: #0186e5;
+}
+
+.project-header.dark {
+  color: #ffffff;
 }
 
 .project-tiles {
@@ -33,7 +40,7 @@ body {
 
 .project-tiles h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #252525;
 }
 
 .project-page {
@@ -49,7 +56,6 @@ body {
 }
 
 .project-tile {
-  background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -58,6 +64,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+
+.project-tile.light {
+  background: #f9f9f9;
+}
+
+.project-tile.dark {
+  background: #2b2b2b;
 }
 
 .project-tile:hover {
@@ -71,10 +85,16 @@ body {
 }
 
 .project-description {
-  color: #555;
   font-size: 1em;
   margin-bottom: 15px;
   margin-top: 0px;
+}
+
+.project-description.light {
+  color: #555;
+}
+.project-description.dark {
+  color: #dddddd;
 }
 
 .project-container {
@@ -94,11 +114,20 @@ body {
 }
 
 .tech-pill {
-  background-color: #e0f7fa;
-  color: #0096ff;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.9em;
+}
+
+.tech-pill.light {
+  background-color: #e0f7fa;
+  color: #0096ff;
+}
+
+.tech-pill.dark {
+  background-color: #333;
+  color: white;
+
 }
 
 .project-links {

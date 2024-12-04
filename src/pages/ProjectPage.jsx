@@ -1,20 +1,22 @@
 import "../styles/projectPage.css";
 import projects from "../../projectsData.json";
 import { FiPlay, FiGithub } from "react-icons/fi";
+import { useMode } from "../components/ModeContext";
 
 export default function Project() {
+  const { mode } = useMode();
     return (
       <div id="project" className="project-container">
-        <h1 className="project-header">Projects</h1>
+        <h1 className={`project-header ${mode}`}>Projects</h1>
         <div className="project-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-tile">
+            <div key={index} className={`project-tile ${mode}`}>
               <div class="image-container"><img src={project.image} className="project-image" alt={`${project.title} Image`} /></div>
               <h2 className="project-title">{project.title}</h2>
-              <p className="project-description">{project.description}</p>
+              <p className={`project-description ${mode}`}>{project.description}</p>
               <div className="tech-container">
                   {project.technologies.map((tech, i) => (
-                      <span key={i} className="tech-pill">{tech}</span>
+                      <span key={i} className={`tech-pill ${mode}`}>{tech}</span>
                   ))}
               </div>
               <div className="project-links">
