@@ -1,17 +1,21 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f5;
+  background-color: #f7f8fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
 .project-header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 3rem;
-}
-
-.project-header.light {
-  color: #0186e5;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0096ff;
+  transition: color 0.3s ease;
 }
 
 .project-header.dark {
@@ -19,13 +23,18 @@ body {
 }
 
 .project-tiles {
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 10px;
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .project-tiles {
+  background: #2b2b2b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-tiles:hover {
@@ -41,6 +50,11 @@ body {
 .project-tiles h2 {
   font-size: 1.5rem;
   color: #252525;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .project-tiles h2 {
+  color: #f0f0f0;
 }
 
 .project-page {
@@ -50,6 +64,7 @@ body {
 }
 
 .project-grid {
+  margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -59,7 +74,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,22 +102,21 @@ body {
 .project-description {
   font-size: 1em;
   margin-bottom: 15px;
-  margin-top: 0px;
+  margin-top: 0;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
-.project-description.light {
-  color: #555;
-}
 .project-description.dark {
-  color: #dddddd;
+  color: #cccccc;
 }
 
 .project-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-container {
@@ -117,6 +131,9 @@ body {
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.9em;
+  background-color: #e0f7fa;
+  color: #0096ff;
+  transition: all 0.3s ease-in-out;
 }
 
 .tech-pill.light {
@@ -125,9 +142,12 @@ body {
 }
 
 .tech-pill.dark {
-  background-color: #333;
-  color: white;
+  background-color: #444;
+  color: #e0e0e0;
+}
 
+.tech-pill.dark:hover {
+  background-color: #555;
 }
 
 .project-links {
@@ -147,7 +167,11 @@ body {
   gap: 5px;
   font-size: 1em;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .project-icon {
+  color: #4a90e2;
 }
 
 .project-icon:hover {

@@ -2,6 +2,14 @@ body {
   font-family: "Merriweather Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #f5f5f5;
+  color: #121212;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
 .container {
@@ -17,12 +25,18 @@ body {
 .header {
   font-size: 48px;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .header-name {
   font-size: 96px;
   color: #0096FF;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+.header-name.dark-mode {
+  color: #4a5eb8;
 }
 
 .job-title {
@@ -42,6 +56,7 @@ body {
   text-align: left;
   max-width: 600px;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .skills-list {
@@ -57,13 +72,17 @@ body {
   border-radius: 5px;
   text-align: center;
   font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
 }
 
-.profile-image {
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 20px;
+body.dark-mode .skill-item {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .skill-item:hover {
+  background: linear-gradient(45deg, #444, #666);
+  color: white;
 }
 
 .link-container {
@@ -74,13 +93,18 @@ body {
 }
 
 .icon {
-  font-size: 40px; 
-  color: #0096FF;     
-  transition: transform 0.3s ease;
+  font-size: 40px;
+  color: #0096FF;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .icon {
+  color: #4a5eb8;
 }
 
 .icon:hover {
   transform: scale(1.1);
+  color: #005fa3;
 }
 
 a {
@@ -88,6 +112,11 @@ a {
   font-size: 24px;
   color: #0096FF;
   text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode a {
+  color: #4a5eb8;
 }
 
 a:hover {
@@ -111,10 +140,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
-
-  .profile-image {
-    max-width: 120px;
   }
 
   .skills-list {

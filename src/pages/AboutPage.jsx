@@ -1,6 +1,5 @@
 import "../styles/aboutPage.css";
-import { useMode } from "../components/ModeContext"; // Import the useMode hook
-
+import { useMode } from "../components/ModeContext";
 const skills = [
   "Python",
   "JavaScript",
@@ -17,17 +16,15 @@ export default function About() {
   const { mode } = useMode(); // Get the current mode (light or dark)
 
   return (
-    <div id="about" className={`about-container ${mode}`}> {/* Apply the mode class here */}
-      <h1 className="about-header">About Me</h1>
+    <div id="about" className={`about-container ${mode}`}>
+      <h1 className={`about-header ${mode}`}>About Me</h1>
       <div className="content-container">
         <div className="text-content">
           <p>
-            Hi, I'm Nadolf Tagoe, a senior majoring in Computer Science with a focus in
-            Software Engineering and Computer Systems. I'm passionate about
-            Frontend and Mobile Development. During my internships at Navy
-            Federal Credit Union and Virtual, Inc., I contributed to platform
-            redesigns, fixed front-end issues, and improved accessibility. I'm
-            eager to keep learning and growing as a developer.
+            Hi, I'm Nadolf Tagoe. I'm a senior majoring in Computer Science with a
+            focus on Software Engineering and Computer Systems. With experience
+            in Front-End and Mobile development, I'm passionate about building
+            impactful applications and continuously refining my skills.
           </p>
           <div>
             <strong>Skills:</strong>

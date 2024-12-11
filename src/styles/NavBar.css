@@ -13,12 +13,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     color: black;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar-container.dark {
     background-color: #333;
     color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .navigation-container {
@@ -26,10 +27,11 @@ body {
 }
 
 .navigation-container a {
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 20px;
     color: #000;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .navigation-container a:hover {
@@ -38,34 +40,46 @@ body {
 
 .navigation-header {
     font-size: 38px;
+    font-weight: bold;
+    color: #0096FF;
+    transition: color 0.3s ease;
+}
+
+body.dark .navigation-header {
+    color: #fff;
 }
 
 .nav-link {
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-link.light {
+    transition: color 0.3s ease;
+}
+
+.nav-link.light {
     color: #000;
-  }
-  
-  .nav-link.light:hover {
+}
+
+.nav-link.light:hover {
     color: #0096ff;
-  }
-  
-  .nav-link.dark {
+}
+
+.nav-link.dark {
     color: #fff;
-  }
-  
-  .nav-link.dark:hover {
-    color: #0096ff;
-  }
+}
+
+.nav-link.dark:hover {
+    color: #ffb400;
+}
 
 .nav-icons {
     font-size: 25px;
     color: #0096FF;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-icons:hover {
+    color: #ffb400;
 }
 
 body.light {
@@ -76,8 +90,4 @@ body.light {
 body.dark {
     background-color: #121212;
     color: white;
-}
-
-.nav-icons:hover {
-    color: #ffb400;
 }

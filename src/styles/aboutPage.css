@@ -1,27 +1,27 @@
 .about-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #f9fafb;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-container.light {
-  background-color: #f5f5f5;;
-  color: black;
+  background-color: #f9fafb;
+  color: #333;
 }
 
 .about-container.dark {
-  background-color: #121212;
-  color: white;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
 .about-header {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
   transition: color 0.3s ease;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .about-header.dark {
-  color: #2b199d;
+  color: #fff;
 }
 
 .certification-section {
@@ -47,24 +47,27 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .text-content {
   flex: 1;
   text-align: left;
   font-size: 18px;
+  color: #fff;
   transition: color 0.3s ease;
+  line-height: 1.6;
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .certification-badge-image {
@@ -80,25 +83,31 @@
 }
 
 .skill-item {
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #e0f7fa;
   color: #0096ff;
-  font-size: 0.9em;
+  font-size: 1rem;
   border-radius: 25px;
-  font-size: 14px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item:hover {
-  background-color: #007bff;
+  background: linear-gradient(45deg, #007bff, #0056b3);
   color: white;
-  border-color: #007bff;
+  transform: translateY(-3px);
 }
 
 .about-container.dark .skill-item {
   background-color: #333;
+  color: #e0e0e0;
+}
+
+.about-container.dark .skill-item:hover {
+  background: linear-gradient(45deg, #444, #666);
   color: white;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -119,5 +128,6 @@
 }
 
 p {
-  word-spacing: 3px;
+  word-spacing: 1.5px;
+  line-height: 1.5;
 }
