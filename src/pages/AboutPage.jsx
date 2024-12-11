@@ -19,7 +19,7 @@ export default function About() {
     <div id="about" className={`about-container ${mode}`}>
       <h1 className={`about-header ${mode}`}>About Me</h1>
       <div className="content-container">
-        <div className="text-content">
+        <div className={`text-content ${mode}`}>
           <p>
             Hi, I'm Nadolf Tagoe. I'm a senior majoring in Computer Science with a
             focus on Software Engineering and Computer Systems. With experience
