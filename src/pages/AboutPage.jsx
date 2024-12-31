@@ -13,18 +13,17 @@ const skills = [
 ];
 
 export default function About() {
-  const { mode } = useMode(); // Get the current mode (light or dark)
-
+  const { mode } = useMode();
   return (
     <div id="about" className={`about-container ${mode}`}>
       <h1 className={`about-header ${mode}`}>About Me</h1>
       <div className="content-container">
         <div className={`text-content ${mode}`}>
           <p>
-            Hi, I'm Nadolf Tagoe. I'm a senior majoring in Computer Science with a
+            Hi, I'm Nadolf Tagoe. I'm a recent Computer Science graduate with a
             focus on Software Engineering and Computer Systems. With experience
             in Front-End and Mobile development, I'm passionate about building
-            impactful applications and continuously refining my skills.
+            applications and continuously refining my skills.
           </p>
           <div>
             <strong>Skills:</strong>

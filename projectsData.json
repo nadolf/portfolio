@@ -2,10 +2,12 @@
   {
     "title": "PlantPal",
     "description": "A plant assistant app designed to help everyone from beginners to plant enthusiasts manage and care for their plants effectively",
+    "modalDescription": "Developed a plant assistant app with camera-based plant recognition, integrated an OpenAI API chatbot, and a plant progress tracker using React Native, JavaScript, and Firebase",
     "image": "src/assets/plantpal-image.png",
     "demoLink": "https://github.com/nadolf/PlantPal/assets/96559304/a82bd6de-2e61-421c-a5a6-4ad2edafd07f",
     "repoLink": "https://github.com/nadolf/PlantPal",
-    "technologies": ["React.js", "JavaScript", "RESTful API", "Firebase"]
+    "technologies": ["React.js", "JavaScript", "RESTful API", "Firebase"],
+    "images": ["src/assets/ProjectImages/Project1/1.png","src/assets/ProjectImages/Project1/2.png","src/assets/ProjectImages/Project1/3.png"]
   },
   {
     "title": "Project 1",
@@ -13,7 +15,8 @@
     "image": "src/assets/tab-logo.png",
     "demoLink": "",
     "repoLink": "",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"]
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "images": ["src/assets/ProjectImages/Project1/1.png"]
   },
   {
     "title": "Project 2",
@@ -21,6 +24,8 @@
     "image": "src/assets/tab-logo.png",
     "demoLink": "",
     "repoLink": "",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"]
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "images": ["/assets/ProjectImages/Project1/1.png","/assets/ProjectImages/Project1/2.png","/assets/ProjectImages/Project1/3.png"]
+
   }
 ]
