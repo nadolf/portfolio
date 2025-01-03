@@ -8,10 +8,10 @@ export default function Home() {
         <h1 class="header-name">Nadolf Tagoe</h1>
         <h3 class="job-title">Software Engineer</h3>
         <div class="link-container">
-          <a href="https://www.linkedin.com/in/nadolf/" class="icon">
+          <a href="https://www.linkedin.com/in/nadolf/" class="icon" target="_blank">
             <FiLinkedin />
           </a>
-          <a href="https://github.com/nadolf" class="icon"><FiGithub />
+          <a href="https://github.com/nadolf" class="icon" target="_blank"><FiGithub />
           </a>
         </div>
       </div>
