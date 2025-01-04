@@ -44,18 +44,14 @@
 
 .content-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
-  max-width: 1200px;
-  margin-top: 30px;
+  align-items: center;
+  width: 60%;
 }
 
 .text-content {
   flex: 1;
   text-align: left;
-  font-size: 18px;
+  font-size: 24px;
   transition: color 0.3s ease;
   line-height: 1.6;
 }
@@ -64,9 +60,13 @@
   color: #fff;
 }
 
+.section-header{
+  font-size: 24px;
+}
+
 .profile-image {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
@@ -74,8 +74,8 @@
 }
 
 .certification-badge-image {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 .skills-list {
@@ -96,38 +96,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.skill-item:hover {
-  background: linear-gradient(45deg, #007bff, #0056b3);
-  color: white;
-  transform: translateY(-3px);
-}
-
 .about-container.dark .skill-item {
   background-color: #333;
   color: #e0e0e0;
-}
-
-.about-container.dark .skill-item:hover {
-  background: linear-gradient(45deg, #444, #666);
-  color: white;
-  transform: translateY(-3px);
-}
-
-@media (max-width: 768px) {
-  .content-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .text-content {
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .profile-image {
-    max-width: 100%;
-    margin-top: 20px;
-  }
 }
 
 p {

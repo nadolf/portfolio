@@ -26,7 +26,7 @@ export default function About() {
             applications and continuously refining my skills.
           </p>
           <div>
-            <strong>Skills:</strong>
+            <strong className="section-header">Skills:</strong>
           </div>
           <div className="skills-list">
             {skills.map((skill, index) => (
@@ -36,7 +36,7 @@ export default function About() {
             ))}
           </div>
           <div className="certification-section">
-            <strong>Certifications:</strong>
+            <strong className="section-header">Certifications:</strong>
             <div className="certification-badge-container">
               <img
                 className="certification-badge-image"
@@ -46,11 +46,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <img
-          className="profile-image"
-          src="src/assets/headshoot.jpg"
-          alt="headshot"
-        />
       </div>
     </div>
   );
