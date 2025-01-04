@@ -13,7 +13,7 @@ body.dark-mode {
 .project-header {
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #0096ff;
   transition: color 0.3s ease;
 }
