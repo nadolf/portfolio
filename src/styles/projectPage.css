@@ -13,6 +13,29 @@ body.dark-mode {
 .project-header {
   text-align: center;
   font-size: 3rem;
+  padding: 100px 0 0 0;
+  color: #0096ff;
+  transition: color 0.3s ease;
+}
+
+.project-header.dark {
+  color: #ffffff;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.project-header {
+  text-align: center;
+  font-size: 3rem;
   margin-bottom: 30px;
   color: #0096ff;
   transition: color 0.3s ease;
@@ -22,63 +45,31 @@ body.dark-mode {
   color: #ffffff;
 }
 
-.project-tiles {
+.project-container {
+  padding: 7  0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  width: 60%;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 10px;
-  text-align: center;
   transition: transform 0.2s, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body.dark-mode .project-tiles {
-  background: #2b2b2b;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.project-tiles:hover {
-  transform: scale(1.05);
-}
-
-.project-tiles img {
-  max-width: 100%;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.project-tiles h2 {
-  font-size: 1.5rem;
-  color: #252525;
-  transition: color 0.3s ease;
-}
-
-body.dark-mode .project-tiles h2 {
-  color: #f0f0f0;
-}
-
-.project-page {
-  padding: 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.project-grid {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.project-tile {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
 }
 
 .project-tile.light {
@@ -90,41 +81,49 @@ body.dark-mode .project-tiles h2 {
 }
 
 .project-tile:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
+}
+
+.image-container {
+  flex: 0 0 150px;
 }
 
 .project-image {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 8px;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .project-title {
+  color: #f0f0f0;
 }
 
 .project-description {
   font-size: 1em;
-  margin-bottom: 15px;
-  margin-top: 0;
-  color: #555;
+  margin: 0;
   transition: color 0.3s ease;
 }
 
-.project-description.dark {
-  color: #cccccc;
-}
-
-.project-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .tech-container {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 30px;
-  justify-content: start;
+  margin-top: 10px;
 }
 
 .tech-pill {
@@ -136,27 +135,16 @@ body.dark-mode .project-tiles h2 {
   transition: all 0.3s ease-in-out;
 }
 
-.tech-pill.light {
-  background-color: #e0f7fa;
-  color: #0096ff;
-}
-
 .tech-pill.dark {
   background-color: #444;
   color: #e0e0e0;
 }
 
-.tech-pill.dark:hover {
-  background-color: #555;
-}
-
 .project-links {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
+  justify-content: end;
+  gap: 20px;
+  margin-top: 15px;
 }
 
 .project-icon {
@@ -176,4 +164,25 @@ body.dark-mode .project-icon {
 
 .project-icon:hover {
   color: #0186e5;
+}
+
+@media (max-width: 768px) {
+  .project-tile {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .image-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+
+.stack-used-title {
+  margin: 20px 0 0 0;
 }

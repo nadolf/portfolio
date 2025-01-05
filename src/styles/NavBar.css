@@ -24,6 +24,7 @@ body {
 
 .navigation-container {
     display: flex;
+    gap: 10px;
 }
 
 .navigation-container a {
@@ -39,7 +40,7 @@ body {
 }
 
 .navigation-header {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     color: #0096FF;
     transition: color 0.3s ease;

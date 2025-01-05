@@ -10,18 +10,16 @@ body.dark-mode {
   color: #e0e0e0;
 }
 
-/* Layout Container */
 .container {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   padding: 40px;
-  gap: 20px; /* Reduced gap */
+  gap: 20px;
 }
 
 
-/* Text Content */
 .content {
   flex: 1;
   text-align: left;
@@ -65,7 +63,6 @@ body.dark-mode {
   color: #005fa3;
 }
 
-/* Image */
 .image-container {
   display: flex;
   justify-content: center;
@@ -80,7 +77,6 @@ body.dark-mode {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
