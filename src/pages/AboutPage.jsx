@@ -1,5 +1,6 @@
 import "../styles/aboutPage.css";
 import { useMode } from "../components/ModeContext";
+import certificationIcon from "../assets/aws-certified-cloud-practitioner-badge.png";
 const skills = [
   "Python",
   "JavaScript",
@@ -40,7 +41,7 @@ export default function About() {
             <div className="certification-badge-container">
               <img
                 className="certification-badge-image"
-                src="src/assets/aws-certified-cloud-practitioner-badge.png"
+                src={certificationIcon}
                 alt="AWS Cloud Practitioner Certification Badge"
               />
             </div>

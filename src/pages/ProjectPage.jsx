@@ -2,7 +2,6 @@ import "../styles/projectPage.css";
 import projects from "../../projectsData.json";
 import { FiPlay, FiGithub } from "react-icons/fi";
 import { useMode } from "../components/ModeContext";
-import { useState } from "react";
 
 export default function Project() {
   const { mode } = useMode();

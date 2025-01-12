@@ -1,4 +1,5 @@
 import "../styles/homePage.css";
+import headshot from "../assets/headshoot.jpg"
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <div className="image-container">
         <img
           className="profile-image"
-          src="src/assets/headshoot.jpg"
+          src={headshot}
           alt="headshot"
         />
       </div>
