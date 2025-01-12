@@ -1,5 +1,6 @@
 import "../styles/projectPage.css";
-import projects from "../../projectsData.json";
+import projects from "../projectsData.json";
+import plantpalImage from "../assets/plantpal-image.png"
 import { FiPlay, FiGithub } from "react-icons/fi";
 import { useMode } from "../components/ModeContext";
 
@@ -14,7 +15,7 @@ export default function Project() {
           <div key={index} className={`project-tile ${mode}`}>
             <div className="image-container">
               <img
-                src={project.image}
+                src={plantpalImage}
                 className="project-image"
                 alt={`${project.title} Image`}
               />

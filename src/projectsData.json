@@ -2,7 +2,7 @@
   {
     "title": "PlantPal",
     "description": "A plant assistant app designed to help everyone from beginners to plant enthusiasts manage and care for their plants effectively",
-    "image": "../src/assets/plantpal-image.png",
+    "image": "/assets/plantpal-image.png",
     "demoLink": "https://github.com/nadolf/PlantPal/assets/96559304/a82bd6de-2e61-421c-a5a6-4ad2edafd07f",
     "repoLink": "https://github.com/nadolf/PlantPal",
     "technologies": ["React.js", "JavaScript", "RESTful API", "Firebase"]
