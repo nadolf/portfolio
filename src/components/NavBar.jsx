@@ -1,4 +1,5 @@
 import "../styles/NavBar.css";
+import resume from "../assets/Tagoe_Nadolf_Resume.pdf"
 import { Link } from "react-scroll";
 import { useMode } from "../components/ModeContext";
 import { MdOutlineLightMode, MdOutlineModeNight } from "react-icons/md";
@@ -18,7 +19,7 @@ export default function NavigationBar() {
         <Link to="project" smooth={true} duration={800} className={`nav-link ${mode}`}>
           Projects
         </Link>
-        <a href="src/assets/Tagoe_Nadolf_Resume.pdf" target="_blank" rel="noopener noreferrer" className={`nav-link ${mode}`}>
+        <a href={resume} target="_blank" rel="noopener noreferrer" className={`nav-link ${mode}`}>
           Resume
         </a>
         <div className="nav-icons" onClick={toggleMode}>
