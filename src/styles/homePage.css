@@ -19,7 +19,6 @@ body.dark-mode {
   gap: 20px;
 }
 
-
 .content {
   flex: 1;
   text-align: left;
@@ -103,5 +102,10 @@ body.dark-mode {
 
   .link-container {
     margin-top: 15px;
+    justify-content: center;
+  }
+
+  .content {
+    text-align: center;
   }
 }
