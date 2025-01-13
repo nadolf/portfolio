@@ -5,5 +5,5 @@ This is my portfolio website showcasing my skills, projects, and experience, bui
 🔗 [Visit My Portfolio](https://nadolf.github.io/portfolio/)
 
 ## Tech Stack
-- **Frontend**: HTML, CSS, JavaScript, React.js
+- **Frontend**: React.js, JavaScript, CSS, HTML 
 - **Deployment**: GitHub Pages
