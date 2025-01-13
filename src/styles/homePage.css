@@ -68,14 +68,6 @@ body.dark-mode {
   align-items: center;
 }
 
-.profile-image {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
@@ -107,5 +99,9 @@ body.dark-mode {
 
   .content {
     text-align: center;
+  }
+
+  .profile-image {
+    margin-top: 15vh;
   }
 }

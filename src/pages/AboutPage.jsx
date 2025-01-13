@@ -39,11 +39,13 @@ export default function About() {
           <div className="certification-section">
             <strong className="section-header">Certifications:</strong>
             <div className="certification-badge-container">
+              <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/a66730b6f3f4488aa06a632776380618">
               <img
                 className="certification-badge-image"
                 src={certificationIcon}
                 alt="AWS Cloud Practitioner Certification Badge"
               />
+              </a>
             </div>
           </div>
         </div>

@@ -80,10 +80,6 @@ body.dark-mode {
   background: #2b2b2b;
 }
 
-.project-tile:hover {
-  transform: scale(1.02);
-}
-
 .image-container {
   flex: 0 0 150px;
 }
@@ -155,7 +151,7 @@ body.dark-mode .project-title {
   gap: 5px;
   font-size: 1em;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
 }
 
 body.dark-mode .project-icon {
@@ -164,6 +160,7 @@ body.dark-mode .project-icon {
 
 .project-icon:hover {
   color: #0186e5;
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
