@@ -1,8 +1,17 @@
 import "../styles/projectPage.css";
-import projects from "../projectsData.json";
-import plantpalImage from "../assets/plantpal-image.png"
 import { FiPlay, FiGithub } from "react-icons/fi";
 import { useMode } from "../components/ModeContext";
+import plantpalImage from "../assets/plantpal-image.png";
+import projects from "../projectsData.json";
+
+const getImage = (projectTitle) => {
+  switch (projectTitle) {
+    case "PlantPal":
+      return plantpalImage;
+    default:
+      return null;
+  }
+};
 
 export default function Project() {
   const { mode } = useMode();
@@ -15,7 +24,7 @@ export default function Project() {
           <div key={index} className={`project-tile ${mode}`}>
             <div className="image-container">
               <img
-                src={plantpalImage}
+                src={getImage(project.title)}
                 className="project-image"
                 alt={`${project.title} Image`}
               />
