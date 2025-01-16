@@ -149,7 +149,7 @@ body.dark-mode .project-title {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease-in-out;
 }
