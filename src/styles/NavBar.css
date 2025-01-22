@@ -39,17 +39,6 @@ body {
     color: #0096FF;
   }
   
-  .navigation-header {
-    font-size: 32px;
-    font-weight: bold;
-    color: #0096FF;
-    transition: color 0.3s ease;
-  }
-  
-  body.dark .navigation-header {
-    color: #fff;
-  }
-  
   .nav-link {
     margin: 0 15px;
     font-size: 20px;
@@ -158,4 +147,9 @@ body {
     .hamburger-icon {
       display: block;
     }
+  }
+
+  .logo-image {
+    height: 70px;
+    width: 70px;
   }
