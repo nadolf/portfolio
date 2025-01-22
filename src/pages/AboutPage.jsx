@@ -2,15 +2,30 @@ import "../styles/aboutPage.css";
 import { useMode } from "../components/ModeContext";
 import certificationIcon from "../assets/aws-certified-cloud-practitioner-badge.png";
 const skills = [
+  // Programming Languages
   "Python",
   "JavaScript",
+  "SQL",
+  "NoSQL",
+
+  // Web Development
   "HTML",
   "CSS",
+  "GraphQL",
+  "RESTful API",
+
+  // Frameworks & Libraries
   "React.Js",
   "React Native",
-  "SQL",
-  "RESTful API",
+  "Node.js",
+  "Express.js",
+
+  // Testing
+  "Jest",
+
+  // Tools & Platforms
   "Git",
+  "Figma",
 ];
 
 export default function About() {
