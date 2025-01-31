@@ -2,12 +2,15 @@ import "../styles/projectPage.css";
 import { FiPlay, FiGithub } from "react-icons/fi";
 import { useMode } from "../components/ModeContext";
 import plantpalImage from "../assets/plantpal-image.png";
+import foodFilterImage from "../assets/food-filter-image.png";
 import projects from "../projectsData.json";
 
 const getImage = (projectTitle) => {
   switch (projectTitle) {
     case "PlantPal":
       return plantpalImage;
+    case "Food Filter":
+      return foodFilterImage;
     default:
       return null;
   }
