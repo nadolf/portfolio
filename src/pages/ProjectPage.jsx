@@ -3,6 +3,7 @@ import { FiPlay, FiGithub } from "react-icons/fi";
 import { useMode } from "../components/ModeContext";
 import plantpalImage from "../assets/plantpal-image.png";
 import foodFilterImage from "../assets/food-filter-image.png";
+import readmeFactoryImage from "../assets/readmeFactoryImage.png"
 import projects from "../projectsData.json";
 
 const getImage = (projectTitle) => {
@@ -11,6 +12,8 @@ const getImage = (projectTitle) => {
       return plantpalImage;
     case "Food Filter":
       return foodFilterImage;
+    case "README Factory":
+        return readmeFactoryImage;
     default:
       return null;
   }

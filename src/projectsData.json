@@ -1,5 +1,12 @@
 [
   {
+    "title": "README Factory",
+    "description": "A README generater application where users can select sections, customize content, see a live preview, and copy or download the final Markdown file for their project",
+    "demoLink": "https://readme-factory-wyv4-1vpu2wkuk-nadolfs-projects.vercel.app/",
+    "repoLink": "https://github.com/nadolf/readme-factory",
+    "technologies": ["React.js","JavaScript","CSS"]
+  },
+  {
     "title": "Food Filter",
     "description": "A scanner app that lets users scan food barcodes to check if the product meets their dietary restrictions and identify any ingredients that don't align",
     "demoLink": "https://github.com/user-attachments/assets/26ebb57d-e91c-4278-b3bc-18e701ac3c0e",
