@@ -4,20 +4,23 @@
     "description": "A README generater application where users can select sections, customize content, see a live preview, and copy or download the final Markdown file for their project",
     "demoLink": "https://readme-factory-wyv4-1vpu2wkuk-nadolfs-projects.vercel.app/",
     "repoLink": "https://github.com/nadolf/readme-factory",
-    "technologies": ["React.js","JavaScript","CSS"]
+    "technologies": ["React.js","JavaScript","CSS"],
+    "projectType": "Website"
   },
   {
     "title": "Food Filter",
     "description": "A scanner app that lets users scan food barcodes to check if the product meets their dietary restrictions and identify any ingredients that don't align",
     "demoLink": "https://github.com/user-attachments/assets/26ebb57d-e91c-4278-b3bc-18e701ac3c0e",
     "repoLink": "https://github.com/nadolf/food-filter",
-    "technologies": ["Swift","SwiftUI","RESTful API","Firebase"]
+    "technologies": ["Swift","SwiftUI","RESTful API","Firebase"],
+    "projectType": "Mobile"
   },
   {
     "title": "PlantPal",
     "description": "A plant assistant app designed to help everyone from beginners to plant enthusiasts manage and care for their plants effectively",
     "demoLink": "https://github.com/nadolf/PlantPal/assets/96559304/a82bd6de-2e61-421c-a5a6-4ad2edafd07f",
     "repoLink": "https://github.com/nadolf/PlantPal",
-    "technologies": ["React.js", "JavaScript", "RESTful API", "Firebase"]
+    "technologies": ["React.js", "JavaScript", "RESTful API", "Firebase"],
+    "projectType": "Mobile"
   }
 ]

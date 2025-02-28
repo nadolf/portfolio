@@ -31,7 +31,7 @@ export default function Project() {
             <div className="image-container">
               <img
                 src={getImage(project.title)}
-                className="project-image"
+                className={`project-image ${project.projectType === "Mobile" ? "mobile-image" : "web-image"}`}
                 alt={`${project.title} Image`}
               />
             </div>

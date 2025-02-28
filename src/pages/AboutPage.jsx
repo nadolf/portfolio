@@ -11,14 +11,11 @@ const skills = [
   // Web Development
   "HTML",
   "CSS",
-  "GraphQL",
   "RESTful API",
 
   // Frameworks & Libraries
   "React.Js",
   "React Native",
-  "Node.js",
-  "Express.js",
 
   // Testing
   "Jest",
